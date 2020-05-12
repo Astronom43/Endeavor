@@ -1,2 +1,3 @@
 # Endeavor
-Repository for home coding
+
+Service for home coding.
