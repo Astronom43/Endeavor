@@ -35,40 +35,6 @@ public class HierarchyStructureService {
 
             HierarchyPriorityStrategy strategy = selector.getActualStrategy(data.getClass());
             strategy.prioritize(unstructured);
-
-//            if (data instanceof Cluster) {
-//                Comparator<Hierarchy> comparator = Comparator.comparing(next -> ((Cluster) next.getData()).getPriority());
-//                unstructured.sort(comparator);
-//            } else if (data instanceof Division) {
-//                Comparator<Hierarchy> comparator = Comparator.comparing(next -> ((Division) next.getData()).getPriority());
-//                unstructured.sort(comparator);
-//            } else if (data instanceof Assortment) {
-//                Comparator<Hierarchy> comparator = Comparator.comparing(next -> ((Assortment) next.getData()).getPriority());
-//                unstructured.sort(comparator);
-//            }
         }
     }
-
-
 }
-
-
-//    private void sort(List<Hierarchy> unstructured) {
-//        Optional<Hierarchy> element = unstructured.stream().findFirst();
-//
-//        if (element.isPresent()) {
-//            Hierarchy hierarchy = element.get();
-//            HierarchyElement data = hierarchy.getData();
-//
-//            if (data instanceof Cluster) {
-//                Comparator<Hierarchy> comparator = Comparator.comparing(next -> ((Cluster) next.getData()).getPriority());
-//                unstructured.sort(comparator);
-//            } else if (data instanceof Division) {
-//                Comparator<Hierarchy> comparator = Comparator.comparing(next -> ((Division) next.getData()).getPriority());
-//                unstructured.sort(comparator);
-//            } else if (data instanceof Assortment) {
-//                Comparator<Hierarchy> comparator = Comparator.comparing(next -> ((Assortment) next.getData()).getPriority());
-//                unstructured.sort(comparator);
-//            }
-//        }
-//    }
